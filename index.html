@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>fittracker</title>
+<meta name="description" content="fittracker is a strength-training log for Android. Your training stays on your phone.">
+<link rel="icon" type="image/png" href="icon.png">
+<style>
+  :root {
+    --plate: #D9D5D0; --cap: #EEEBE7; --ink: #2B2622; --ink-variant: #665F57;
+    --shadow: 0 3px 8px rgba(82,81,76,.22), 0 1px 1px rgba(82,81,76,.14);
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --plate: #181818; --cap: #3A3B3B; --ink: #ECECEC; --ink-variant: #A3A3A3;
+      --shadow: 0 3px 8px rgba(0,0,0,.45), 0 1px 1px rgba(0,0,0,.30);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--plate); color: var(--ink);
+    font-family: Roboto, "Helvetica Neue", Arial, system-ui, sans-serif;
+    font-size: 16px; line-height: 24px; font-weight: 400;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 48px 16px 32px; }
+  .cap { background: var(--cap); border-radius: 16px; box-shadow: var(--shadow); padding: 24px; }
+  .cap + .cap { margin-top: 16px; }
+  header { display: flex; align-items: center; gap: 16px; }
+  header img { width: 64px; height: 64px; border-radius: 16px; box-shadow: var(--shadow); }
+  h1 { font-size: 28px; line-height: 36px; font-weight: 500; margin: 0; }
+  .tagline { margin: 0; color: var(--ink-variant); }
+  h2 { font-size: 18px; line-height: 24px; font-weight: 500; margin: 0 0 8px; }
+  p { margin: 0 0 12px; }
+  p:last-child, ul:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li + li { margin-top: 4px; }
+  .lead { margin-top: 24px; }
+  a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+  footer { max-width: 640px; margin: 0 auto; padding: 0 16px 48px; color: var(--ink-variant); font-size: 14px; line-height: 20px; }
+  footer a { color: var(--ink-variant); }
+</style>
+</head>
+<body>
+<main>
+  <section class="cap">
+    <header>
+      <img src="icon.png" alt="" width="64" height="64">
+      <div>
+        <h1>fittracker</h1>
+        <p class="tagline">A strength-training log for Android</p>
+      </div>
+    </header>
+    <p class="lead">fittracker is for lifting. Plan your week, follow a program, log every set at the gym with a rest timer between them, and see how your lifts move over the weeks. It also keeps a simple food log and your body weight and measurements.</p>
+    <p>Everything you record stays on your phone. There is no fittracker account, no advertising and no tracking of how you use the app.</p>
+  </section>
+
+  <section class="cap">
+    <h2>Backup to your own Google Drive</h2>
+    <p>If you choose to, fittracker can back up your data to your own Google Drive. You sign in with your Google account in Settings → Cloud Backup, and fittracker asks Google for two things only: your email address, to show which account is connected, and access to the files fittracker itself creates in your Drive. It cannot see any other file there.</p>
+    <p>The backups go straight from your phone to your Drive. Restore from Backup brings them back, on the same phone or a new one.</p>
+  </section>
+
+  <section class="cap">
+    <h2>Getting fittracker</h2>
+    <p>fittracker is in a private test on Google Play. People invited by the developer install it from there.</p>
+  </section>
+
+  <section class="cap">
+    <h2>Privacy</h2>
+    <p>What fittracker does with your data, and what it sends, is in the <a href="privacy.html">privacy policy</a>.</p>
+  </section>
+</main>
+<footer>
+  fittracker is made by Henning Merkel · <a href="mailto:mail@henningmerkel.de">mail@henningmerkel.de</a> · <a href="privacy.html">Privacy policy</a>
+</footer>
+</body>
+</html>
